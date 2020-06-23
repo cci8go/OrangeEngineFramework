@@ -93,6 +93,10 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
         s.platform = :ios
         s.framework = "UIKit"
 
+        * pod trunk push OrangeEngineFramework.podspec  --verbose
+  			CDN: trunk Relative path: CocoaPods-version.yml exists! Returning local because checking is only perfomed in repo update
+  			删除本地文件 .cocoapods/repos/trunk
+
 
 ### 使用模版创建
     
