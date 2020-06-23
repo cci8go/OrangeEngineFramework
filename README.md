@@ -76,6 +76,15 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
 
     https://cocoapods.org/pods/OrangeEngineFramework
 
+### 查看某个库信息
+
+	pod trunk info OrangeEngineFramework
+
+### 删除某个库的某个版本，该行为不可回退。
+
+	pod trunk delete OrangeEngineFramework 1.0.0
+    官方文档也明确表示 不赞成 使用该命令，建议使用 pod trunk deprecate 代替
+
 
 ### 上传问题
 
