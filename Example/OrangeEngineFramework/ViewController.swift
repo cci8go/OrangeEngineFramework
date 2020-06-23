@@ -8,11 +8,15 @@
 
 import UIKit
 
+import OrangeEngineFramework
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print(OrangeEngineTest.ORANGE_SDK_VERSION)
     }
 
     override func didReceiveMemoryWarning() {
