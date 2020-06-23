@@ -41,12 +41,12 @@
 		607FACE51AFB9204008FA782 /* OrangeEngineFramework_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeEngineFramework_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		70F7CA2CAB6064420144E742 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		70F7CA2CAB6064420144E742 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8130E6714A154CE9D6AE38F5 /* Pods_OrangeEngineFramework_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeEngineFramework_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9948C529F40236032F4D2682 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9948C529F40236032F4D2682 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BA10100C19233AF1378692CB /* Pods-OrangeEngineFramework_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeEngineFramework_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OrangeEngineFramework_Tests/Pods-OrangeEngineFramework_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C54997A714ECF2AA85E3329A /* Pods-OrangeEngineFramework_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrangeEngineFramework_Tests.release.xcconfig"; path = "Target Support Files/Pods-OrangeEngineFramework_Tests/Pods-OrangeEngineFramework_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FD512E3918910720E995AB7C /* OrangeEngineFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OrangeEngineFramework.podspec; path = ../OrangeEngineFramework.podspec; sourceTree = "<group>"; };
+		FD512E3918910720E995AB7C /* OrangeEngineFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OrangeEngineFramework.podspec; path = ../OrangeEngineFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				BA10100C19233AF1378692CB /* Pods-OrangeEngineFramework_Tests.debug.xcconfig */,
 				C54997A714ECF2AA85E3329A /* Pods-OrangeEngineFramework_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OrangeEngineFramework'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of OrangeEngineFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -21,14 +21,15 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/153190953@qq.com/OrangeEngineFramework'
+  s.homepage         = 'https://github.com/cci8go/OrangeEngineFramework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '153190953@qq.com' => '153190953@qq.com' }
-  s.source           = { :git => 'https://github.com/153190953@qq.com/OrangeEngineFramework.git', :tag => s.version.to_s }
+  s.author           = { 'Chance' => '153190953@qq.com' }
+  s.source           = { :git => 'https://github.com/cci8go/OrangeEngineFramework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = "5.0"
 
   s.source_files = 'OrangeEngineFramework/Classes/**/*'
   
