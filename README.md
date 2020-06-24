@@ -126,8 +126,8 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
         mv Specs-master ~/.cocoapods/repos/master
         mv ~/tempSpecsGitFolder ~/.cocoapods/repos/master/.git
         cd [project folder]
-        pod install --no-repo-update
-
+    
+        pod install --verbose --no-repo-update
 
 
 
