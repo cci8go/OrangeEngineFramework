@@ -34,15 +34,11 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'OrangeEngineFramework/Classes/**/*'
   
-   s.resource_bundles = {
-     'OrangeEngineFramework' => ['OrangeEngineFramework/Assets/OrangeEngineFarmeworkbundle.bundle']
-   }
-
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit','Foundation'
+  s.frameworks = 'UIKit'
   
   # s.dependency 'AFNetworking', '~> 2.3'
   # 依赖的三方库
   # s.dependency 'AFNetworking', '~>3.2.1'
-  s.static_framework = true
+  #s.static_framework = true
 end

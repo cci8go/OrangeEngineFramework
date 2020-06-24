@@ -1,45 +1,16 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
-    - AFNetworking/NSURLSession
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - OrangeEngineFramework (1.0.0):
-    - AFNetworking (~> 3.2.1)
+  - OrangeEngineFramework (1.0.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - OrangeEngineFramework (from `../`)
-
-SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
-    - AFNetworking
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   OrangeEngineFramework:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  OrangeEngineFramework: a536863f17eb913cfb48441902c68da915a40f1a
+  OrangeEngineFramework: f2415ee5d1df26ed5353a7cc1e638b9b90b2b4de
 
-PODFILE CHECKSUM: c14df22a090e1d92cba8cfed03782c8a0231e537
+PODFILE CHECKSUM: 79a8b7bead7fe379645f429a999bdabad8160eb7
 
 COCOAPODS: 1.9.3
