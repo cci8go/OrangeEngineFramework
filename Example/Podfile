@@ -1,12 +1,13 @@
 
 source  'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
+
+use_modular_headers!
 use_frameworks!
 
 target 'OrangeEngineFramework_Example' do
   
-  pod 'OrangeEngineFramework', :path => '../'
-  pod 'AFNetworking' ,'~>3.2.1'
+  pod 'OrangeEngineFramework', :path => '../' , :modular_headers => true
 
   target 'OrangeEngineFramework_Tests' do
     inherit! :search_paths

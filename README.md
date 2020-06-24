@@ -77,6 +77,9 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
        
        *  打包 
         pod package OrangeEngineFramework.podspec --force --dynamic --no-mangle --spec-sources=https://github.com/CocoaPods/Specs.git
+        
+        
+        pod package OrangeEngineFramework.podspec --force --dynamic --no-mangle --spec-sources=https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git
 
        如果命令后面加条尾巴 --library 则表示打包成 .a 文件，如果不带，则会打包成 .framework 文件。 --force会覆盖之前已存在的文件。完成了就可以在目录下看到***-0.0.1，里面就是你想要的Framework了。
     * 上传到cocoapods
@@ -114,24 +117,6 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
 
 
 
-
-
-### pod 相关问题
-
-        pod setup (in a separate tab)
-        mv ~/.cocoapods/repos/master/.git ~/tempSpecsGitFolder
-        ^C on pod setup tab
-        wget https://github.com/CocoaPods/Specs/archive/master.zip
-        open master.zip (unzipping it)
-        mv Specs-master ~/.cocoapods/repos/master
-        mv ~/tempSpecsGitFolder ~/.cocoapods/repos/master/.git
-        cd [project folder]
-    
-        pod install --verbose --no-repo-update
-
-
-
-
 ### 参考
 
        * 打包上传 https://www.jianshu.com/p/20c0b213023c
@@ -150,3 +135,5 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
         等待clone 完成，使用的时候在PodFile 中加入
         source  'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
         rm ~/Library/Caches/CocoaPods/search_index.json
+        
+        pod install --verbose --no-repo-update

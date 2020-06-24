@@ -20,15 +20,14 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - OrangeEngineFramework (1.0.0):
-    - AFNetworking
+    - AFNetworking (~> 3.2.1)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.2.1)
   - FBSnapshotTestCase (~> 2.1.4)
   - OrangeEngineFramework (from `../`)
 
 SPEC REPOS:
-  trunk:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
     - FBSnapshotTestCase
 
@@ -39,8 +38,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  OrangeEngineFramework: 6d609af931afba1214c0d79733308a26075e9c70
+  OrangeEngineFramework: a536863f17eb913cfb48441902c68da915a40f1a
 
-PODFILE CHECKSUM: 3f93d7b77d0630c163eadf4dc1ddc749353f7845
+PODFILE CHECKSUM: c14df22a090e1d92cba8cfed03782c8a0231e537
 
 COCOAPODS: 1.9.3

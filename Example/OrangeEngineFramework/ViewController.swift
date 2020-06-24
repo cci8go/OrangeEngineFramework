@@ -19,9 +19,9 @@ class ViewController: UIViewController {
         print(OrangeEngineNetManager.ORANGE_SDK_VERSION)
         
         
-        OrangeEngineNetManager.shared.request(requestType: .GET, urlString: "https:www.baidu.com", parameters: ["userName": "zhangsan" as AnyObject]) { (json) in
-            print(json as Any)
-        }
+//        OrangeEngineNetManager.shared.request(requestType: .GET, urlString: "http://58.246.9.10:19225/rest/sgmw/advertisement", parameters: ["userName": "zhangsan" as AnyObject]) { (json) in
+//            print(json as Any)
+//        }
     }
 
     override func didReceiveMemoryWarning() {
