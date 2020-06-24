@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'OrangeEngineFramework/Classes/**/*'
   
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+#  s.public_header_files = 'OrangeEngineFramework/Classes/**/*'
   s.frameworks = 'UIKit'
   
   # s.dependency 'AFNetworking', '~> 2.3'

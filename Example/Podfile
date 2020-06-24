@@ -2,10 +2,10 @@
 source  'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
 
-use_modular_headers!
 use_frameworks!
 
 target 'OrangeEngineFramework_Example' do
   
   pod 'OrangeEngineFramework', :path => '../'
+  
 end
