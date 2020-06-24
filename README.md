@@ -68,13 +68,22 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
     删除远程tag
     git push origin :refs/tags/"1.0.0"
 
-### 上传CocoaPods
+### 打包上传CocoaPods
 
-    pod spec lint OrangeEngineFramework.podspec --allow-warnings
-    pod trunk push OrangeEngineFramework.podspec --allow-warnings
+    *  验证类库是否符合 pod 的要求
+       pod spec lint OrangeEngineFramework.podspec --allow-warnings
+    *  安装 打包插件 
+        sudo gem install cocoapods-packager 安装CocoaPods 
+       
+       *  打包 
+        pod package OrangeEngineFramework.podspec --force --dynamic --no-mangle --spec-sources=https://github.com/CocoaPods/Specs.git
+
+       如果命令后面加条尾巴 --library 则表示打包成 .a 文件，如果不带，则会打包成 .framework 文件。 --force会覆盖之前已存在的文件。完成了就可以在目录下看到***-0.0.1，里面就是你想要的Framework了。
+    * 上传到cocoapods
+      pod trunk push OrangeEngineFramework.podspec --allow-warnings 
 
 
-    https://cocoapods.org/pods/OrangeEngineFramework
+      https://cocoapods.org/pods/OrangeEngineFramework
 
 ### 查看某个库信息
 
@@ -101,3 +110,28 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
 ### 使用模版创建
     
      pod lib create OrangeEngineFramework
+
+
+
+
+
+
+### pod 相关问题
+
+        pod setup (in a separate tab)
+        mv ~/.cocoapods/repos/master/.git ~/tempSpecsGitFolder
+        ^C on pod setup tab
+        wget https://github.com/CocoaPods/Specs/archive/master.zip
+        open master.zip (unzipping it)
+        mv Specs-master ~/.cocoapods/repos/master
+        mv ~/tempSpecsGitFolder ~/.cocoapods/repos/master/.git
+        cd [project folder]
+        pod install --no-repo-update
+
+
+
+
+
+### 参考
+
+       * 打包上传 https://www.jianshu.com/p/20c0b213023c

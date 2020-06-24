@@ -1,17 +1,26 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - OrangeEngineFramework (0.1.0)
+  - OrangeEngineFramework (1.0.0):
+    - AFNetworking
 
 DEPENDENCIES:
+  - AFNetworking
   - FBSnapshotTestCase (~> 2.1.4)
   - OrangeEngineFramework (from `../`)
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
@@ -19,9 +28,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  OrangeEngineFramework: fe60166869c06ff46442a3bac4db60d237334617
+  OrangeEngineFramework: 6d609af931afba1214c0d79733308a26075e9c70
 
-PODFILE CHECKSUM: c86511e55e7857fa9c6ffe997f0aa7831034a74a
+PODFILE CHECKSUM: 0ba3c81b9436dfc4e038e813a1890d1a9333fbd3
 
 COCOAPODS: 1.9.3

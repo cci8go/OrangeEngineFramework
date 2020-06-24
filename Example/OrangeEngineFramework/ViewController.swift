@@ -16,7 +16,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        print(OrangeEngineTest.ORANGE_SDK_VERSION)
+        print(OrangeEngineNetManager.ORANGE_SDK_VERSION)
+        
+        
+        OrangeEngineNetManager.shared.request(requestType: .GET, urlString: "https:www.baidu.com", parameters: ["userName": "zhangsan" as AnyObject]) { (json) in
+            print(json as Any)
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,7 +1,9 @@
 use_frameworks!
 
 target 'OrangeEngineFramework_Example' do
+  
   pod 'OrangeEngineFramework', :path => '../'
+  pod 'AFNetworking'
 
   target 'OrangeEngineFramework_Tests' do
     inherit! :search_paths
