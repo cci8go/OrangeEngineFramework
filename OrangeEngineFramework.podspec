@@ -34,6 +34,16 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'OrangeEngineFramework/Classes/**/*'
   
+  
+#  s.subspec 'net' do |sp|
+#      sp.source_files = 'OrangeEngineFramework/Classes/net/*'
+#  end
+#  
+#  s.subspec 'common' do |sp|
+#    sp.source_files = 'OrangeEngineFramework/Classes/common/*'
+#  end
+
+  
 #  s.public_header_files = 'OrangeEngineFramework/Classes/**/*'
   s.frameworks = 'UIKit'
   
