@@ -135,3 +135,18 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
 ### 参考
 
        * 打包上传 https://www.jianshu.com/p/20c0b213023c
+       
+       
+    
+### Cocopods 国内镜像--让Pod 健步如飞
+
+        cd ~/.cocoapods/repos 
+        pod repo remove master
+        git clone https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git  master
+        pod setup // 不要忘记这一步，这一步是把master 装配上
+
+        pod search '' // 这里随便search 一个库，让cocopods 建立索引
+
+        等待clone 完成，使用的时候在PodFile 中加入
+        source  'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+        rm ~/Library/Caches/CocoaPods/search_index.json

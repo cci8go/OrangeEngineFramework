@@ -51,9 +51,9 @@ public class OrangeEngineNetManager:AFHTTPSessionManager {
         let hearders = ["test":"test"]
         
         if requestType == .GET {
-            get(urlString, parameters: parameters, headers: hearders, progress: nil, success: success, failure: failure)
+            get(urlString, parameters: parameters, progress: nil, success: success, failure: failure)
         } else {
-            post(urlString, parameters: parameters, headers: hearders, progress: nil, success: success, failure: failure)
+            post(urlString, parameters: parameters, progress: nil, success: success, failure: failure)
         }
     }
     

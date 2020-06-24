@@ -43,5 +43,5 @@ TODO: Add long description of the pod here.
   
   # s.dependency 'AFNetworking', '~> 2.3'
   # 依赖的三方库
-  s.dependency 'AFNetworking'
+   s.dependency 'AFNetworking', '~>3.2.1'
 end
