@@ -34,14 +34,6 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'OrangeEngineFramework/Classes/**/*'
   
-  
-#  s.subspec 'net' do |sp|
-#      sp.source_files = 'OrangeEngineFramework/Classes/net/*'
-#  end
-#  
-#  s.subspec 'common' do |sp|
-#    sp.source_files = 'OrangeEngineFramework/Classes/common/*'
-#  end
 
   
 #  s.public_header_files = 'OrangeEngineFramework/Classes/**/*'
@@ -51,4 +43,11 @@ TODO: Add long description of the pod here.
   # 依赖的三方库
   # s.dependency 'AFNetworking', '~>3.2.1'
   #s.static_framework = true
+  
+  
+  s.subspec "net" do |ss|
+     ss.source_files  = "OrangeEngineFramework/Classes/net/*.swift"
+#     ss.framework  = "Foundation"
+   end
+  
 end
