@@ -1,7 +1,9 @@
 PODS:
-  - OrangeEngineFramework (1.0.2):
-    - OrangeEngineFramework/net (= 1.0.2)
-  - OrangeEngineFramework/net (1.0.2)
+  - OrangeEngineFramework (1.0.3):
+    - OrangeEngineFramework/common (= 1.0.3)
+    - OrangeEngineFramework/net (= 1.0.3)
+  - OrangeEngineFramework/common (1.0.3)
+  - OrangeEngineFramework/net (1.0.3)
 
 DEPENDENCIES:
   - OrangeEngineFramework (from `../`)
@@ -11,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  OrangeEngineFramework: fa940a067d74e8ee2a4e5406c8e176f6e7383977
+  OrangeEngineFramework: f60d64e040722abb1784f9831621f4b9d0de3a26
 
 PODFILE CHECKSUM: 0d282646a03154518da0683f325be6f5efc85685
 
