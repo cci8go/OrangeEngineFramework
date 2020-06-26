@@ -6,7 +6,7 @@
 //
 
 import Foundation
-//import AFNetworking
+import AFNetworking
 
 
 //枚举定义请求方式
@@ -15,7 +15,7 @@ public enum HTTPRequestType {
     case POST
 }
 
-public class OrangeEngineNetManager {
+public class OrangeEngineNetManager:AFHTTPSessionManager {
     
     public static let ORANGE_SDK_VERSION = "1.0.0"
 
@@ -35,26 +35,26 @@ public class OrangeEngineNetManager {
 
     
     
-//    public func request(requestType: HTTPRequestType, urlString: String, parameters: [String: AnyObject]?, completion: @escaping (AnyObject?) -> ()) {
-//
-//        //成功回调
-//        let success = { (task: URLSessionDataTask, json: Any)->() in
-//            completion(json as AnyObject?)
-//        }
-//
-//        //失败回调
-//        let failure = { (task: URLSessionDataTask?, error: Error) -> () in
-//            print("网络请求错误 \(error)")
-//            completion(nil)
-//        }
-//
-//        _ = ["test":"test"]
-//
-//        if requestType == .GET {
-//            get(urlString, parameters: parameters, progress: nil, success: success, failure: failure)
-//        } else {
-//            post(urlString, parameters: parameters, progress: nil, success: success, failure: failure)
-//        }
-//    }
+    public func request(requestType: HTTPRequestType, urlString: String, parameters: [String: AnyObject]?, completion: @escaping (AnyObject?) -> ()) {
+
+        //成功回调
+        let success = { (task: URLSessionDataTask, json: Any)->() in
+            completion(json as AnyObject?)
+        }
+
+        //失败回调
+        let failure = { (task: URLSessionDataTask?, error: Error) -> () in
+            print("网络请求错误 \(error)")
+            completion(nil)
+        }
+
+        _ = ["test":"test"]
+
+        if requestType == .GET {
+            get(urlString, parameters: parameters, progress: nil, success: success, failure: failure)
+        } else {
+            post(urlString, parameters: parameters, progress: nil, success: success, failure: failure)
+        }
+    }
     
 }

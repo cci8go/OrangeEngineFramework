@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OrangeEngineFramework'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A short description of OrangeEngineFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -39,9 +39,6 @@ TODO: Add long description of the pod here.
 #  s.public_header_files = 'OrangeEngineFramework/Classes/**/*'
   s.frameworks = 'UIKit'
   
-  # s.dependency 'AFNetworking', '~> 2.3'
-  # 依赖的三方库
-  # s.dependency 'AFNetworking', '~>3.2.1'
   #s.static_framework = true
   
   
@@ -55,5 +52,7 @@ s.subspec "net" do |ss|
    #ss.framework  = "Foundation"
 end
   
-  
+# 依赖的三方库
+s.dependency 'AFNetworking', '~>3.2.1'
+
 end

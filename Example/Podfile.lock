@@ -1,20 +1,44 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - OrangeEngineFramework (1.0.3):
+    - AFNetworking (~> 3.2.1)
     - OrangeEngineFramework/common (= 1.0.3)
     - OrangeEngineFramework/net (= 1.0.3)
-  - OrangeEngineFramework/common (1.0.3)
-  - OrangeEngineFramework/net (1.0.3)
+  - OrangeEngineFramework/common (1.0.3):
+    - AFNetworking (~> 3.2.1)
+  - OrangeEngineFramework/net (1.0.3):
+    - AFNetworking (~> 3.2.1)
 
 DEPENDENCIES:
+  - AFNetworking
   - OrangeEngineFramework (from `../`)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   OrangeEngineFramework:
     :path: "../"
 
 SPEC CHECKSUMS:
-  OrangeEngineFramework: f60d64e040722abb1784f9831621f4b9d0de3a26
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  OrangeEngineFramework: a57b276a7922632588e3646351d73eed5b17792b
 
-PODFILE CHECKSUM: 0d282646a03154518da0683f325be6f5efc85685
+PODFILE CHECKSUM: bb5d3b1e0e8d0f8bc9a5f235c8f56aeeac2d3a29
 
 COCOAPODS: 1.7.5

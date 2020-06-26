@@ -8,4 +8,5 @@ target 'OrangeEngineFramework_Example' do
   
   pod 'OrangeEngineFramework', :path => '../'
   
+  pod 'AFNetworking'
 end
