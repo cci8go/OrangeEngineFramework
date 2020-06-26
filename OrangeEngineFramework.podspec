@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OrangeEngineFramework'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A short description of OrangeEngineFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
   s.swift_version = '4.0'
 
-  s.source_files = 'OrangeEngineFramework/Classes/**/*'
+#  s.source_files = 'OrangeEngineFramework/Classes/**/*'
   
 
   
@@ -45,9 +45,15 @@ TODO: Add long description of the pod here.
   #s.static_framework = true
   
   
-  s.subspec "net" do |ss|
-     ss.source_files  = "OrangeEngineFramework/Classes/net/*.swift"
-#     ss.framework  = "Foundation"
-   end
+s.subspec "common" do |ss|
+   ss.source_files  = "OrangeEngineFramework/Classes/common/*.swift"
+  #ss.framework  = "Foundation"
+end
+  
+s.subspec "net" do |ss|
+   ss.source_files  = "OrangeEngineFramework/Classes/net/*.swift"
+   #ss.framework  = "Foundation"
+end
+  
   
 end
