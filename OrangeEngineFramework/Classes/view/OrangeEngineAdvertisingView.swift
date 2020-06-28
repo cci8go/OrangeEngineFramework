@@ -39,7 +39,7 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
         m_SDCycleScrollView = SDCycleScrollView(frame: frame, delegate: self, placeholderImage: placeholderImage)
         m_SDCycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
         m_SDCycleScrollView.currentPageDotColor = UIColor.green; // 自定义分页控件小圆标颜色
-        m_SDCycleScrollView.autoScrollTimeInterval = 2.0
+        m_SDCycleScrollView.autoScrollTimeInterval = autoScrollTimeInterval
         m_SDCycleScrollView.imageURLStringsGroup = imageURLStringsGroup
         m_SDCycleScrollView.titlesGroup = titlesGroup
         
