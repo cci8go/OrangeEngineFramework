@@ -31,8 +31,6 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
 
 
 
-
-
 ### gem sources -l #(查看当前ruby的源)
 
 
@@ -137,3 +135,10 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
         rm ~/Library/Caches/CocoaPods/search_index.json
         
         pod install --verbose --no-repo-update
+
+
+
+### Requirements
+
+    * Xcode Xcode 11+ is required.
+    * iOS 9+

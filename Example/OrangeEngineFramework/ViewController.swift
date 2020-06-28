@@ -24,12 +24,12 @@ class ViewController: UIViewController {
 //        }
         
         
-        let param:[String : String] = [:]
-        OrangeEngineNetManager.shareManager.request(type: .Get, urlString: urlString, parameters: param as AnyObject, successBlock: { (dataDic) in
-//            print(dataDic ?? Dictionary())
+        let params:[String : String] = [:]
+//        let headers:[String:String]? = nil
+        OrangeEngineNetManager.shareManager.request(type: .GET, urlString: urlString, parameters: params as AnyObject,headers:nil ,successBlock: { (dataDic) in
+            //            print(dataDic ?? Dictionary())
             
-//            print(dataDic!["entities"] as Any)
-                        
+            //            print(dataDic!["entities"] as Any)
             
             if let listArray = dataDic?["entities"] as? NSArray {
                 for value in listArray {

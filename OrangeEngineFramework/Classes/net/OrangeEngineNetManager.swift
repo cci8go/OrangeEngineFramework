@@ -9,10 +9,10 @@ import Foundation
 import AFNetworking
 
 
-// 添加两种类型 Post，Get
-public enum requestType {
-    case Post
-    case Get
+// 添加两种类型 POST，GET
+public enum RequestType {
+    case POST
+    case GET
 }
 
 
@@ -30,8 +30,7 @@ public class OrangeEngineNetManager:AFHTTPSessionManager {
     
     
     // GET/POST
-    public func request(type: requestType, urlString: String, parameters: AnyObject?,successBlock: @escaping([String : Any]?) -> (), failureBlock: @escaping (Error?)->()) -> Void {
-        
+    public func request(type: RequestType, urlString: String, parameters: AnyObject?,headers: [String:String]?,successBlock: @escaping([String : Any]?) -> (), failureBlock: @escaping (Error?)->()) -> Void {
         
         // 成功的闭包
         let successBlock = { (task: URLSessionDataTask, responseObj: Any?) in
@@ -44,12 +43,15 @@ public class OrangeEngineNetManager:AFHTTPSessionManager {
         }
         
         // 进行请求
-        if type==requestType.Get {
+        if type==RequestType.GET {
             // GET 担心包含中文处理一下
             _ = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-            get(urlString, parameters: parameters, progress: nil, success: successBlock, failure: failureBlock)
+            
+            get(urlString, parameters: parameters, headers: nil, progress: nil, success: successBlock, failure: failureBlock)
+            
+            
         } else {
-            post(urlString, parameters: parameters, progress: nil, success: successBlock, failure: failureBlock)
+            post(urlString, parameters: parameters, headers: headers, progress: nil, success: successBlock, failure: failureBlock)
         }
     }
     

@@ -1,27 +1,27 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - OrangeEngineFramework (1.0.4):
-    - AFNetworking (~> 3.2.1)
+    - AFNetworking (~> 4.0.1)
     - OrangeEngineFramework/common (= 1.0.4)
     - OrangeEngineFramework/net (= 1.0.4)
   - OrangeEngineFramework/common (1.0.4):
-    - AFNetworking (~> 3.2.1)
+    - AFNetworking (~> 4.0.1)
   - OrangeEngineFramework/net (1.0.4):
-    - AFNetworking (~> 3.2.1)
+    - AFNetworking (~> 4.0.1)
 
 DEPENDENCIES:
   - AFNetworking
@@ -36,9 +36,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  OrangeEngineFramework: 588bfb9d058374126a9d3bf0e3da44ce1c014ff9
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  OrangeEngineFramework: 52ef9c242ec05a98a2b9b9b4a695b5b1095e6059
 
 PODFILE CHECKSUM: bb5d3b1e0e8d0f8bc9a5f235c8f56aeeac2d3a29
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.3

@@ -53,6 +53,6 @@ s.subspec "net" do |ss|
 end
   
 # 依赖的三方库
-s.dependency 'AFNetworking', '~>3.2.1'
+s.dependency 'AFNetworking', '~>4.0.1'
 
 end
