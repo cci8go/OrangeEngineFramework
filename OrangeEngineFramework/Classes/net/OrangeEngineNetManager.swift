@@ -73,7 +73,7 @@ public class OrangeEngineNetManager:AFHTTPSessionManager {
             // GET 担心包含中文处理一下
             _ = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
             
-            get(urlString, parameters: parameters, headers: nil, progress: nil, success: successBlock, failure: failureBlock)
+            get(urlString, parameters: parameters, headers: headers, progress: nil, success: successBlock, failure: failureBlock)
             
         } else {
             post(urlString, parameters: parameters, headers: headers, progress: nil, success: successBlock, failure: failureBlock)
