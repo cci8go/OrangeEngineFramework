@@ -30,6 +30,32 @@ public class OrangeEngineNetManager:AFHTTPSessionManager {
     
     
     // GET/POST
+    /** 结果解析
+     print("dataDic = ",dataDic as Any)
+     
+     let resultJson = dataDic as NSDictionary? // json对象
+     let status = resultJson?["status"] as? NSInteger
+     let success = resultJson?["success"] as? NSInteger
+     let errorCode = resultJson?["errorCode"] as? NSInteger
+     let message = resultJson?["message"] as? NSString
+     let entitiesArr = resultJson?["entities"] as? NSArray // json数组
+     
+     
+     print("解析结果: ")
+     print("resultJson = ",resultJson as Any)
+     print("status = ",status as Any)
+     print("success = ",success as Any)
+     print("errorCode = ",errorCode as Any)
+     print("message = ",message as Any)
+     print("entitiesArr = ",entitiesArr as Any)
+     
+     for value in entitiesArr! as NSArray{
+        let valueDictionary = value as! NSDictionary
+        let url = valueDictionary["url"] as? NSString
+        let seq = valueDictionary["seq"] as? NSInteger
+        print("url = ",url as Any,"seq = ",seq as Any )
+     }
+     */
     public func request(type: RequestType, urlString: String, parameters: AnyObject?,headers: [String:String]?,successBlock: @escaping([String : Any]?) -> (), failureBlock: @escaping (Error?)->()) -> Void {
         
         // 成功的闭包
@@ -48,7 +74,6 @@ public class OrangeEngineNetManager:AFHTTPSessionManager {
             _ = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
             
             get(urlString, parameters: parameters, headers: nil, progress: nil, success: successBlock, failure: failureBlock)
-            
             
         } else {
             post(urlString, parameters: parameters, headers: headers, progress: nil, success: successBlock, failure: failureBlock)

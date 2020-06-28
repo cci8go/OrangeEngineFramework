@@ -10,6 +10,8 @@ import UIKit
 
 import OrangeEngineFramework
 
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -25,17 +27,35 @@ class ViewController: UIViewController {
         
         
         let params:[String : String] = [:]
-//        let headers:[String:String]? = nil
-        OrangeEngineNetManager.shareManager.request(type: .GET, urlString: urlString, parameters: params as AnyObject,headers:nil ,successBlock: { (dataDic) in
-            //            print(dataDic ?? Dictionary())
+        let headers:[String:String] = [:]
+        OrangeEngineNetManager.shareManager.request(type: .GET, urlString: urlString, parameters: params as AnyObject,headers:headers ,successBlock: { (dataDic) in
+                       
+            print("dataDic = ",dataDic as Any)
             
-            //            print(dataDic!["entities"] as Any)
+            let resultJson = dataDic as NSDictionary? // json对象
+            let status = resultJson?["status"] as? NSInteger
+            let success = resultJson?["success"] as? NSInteger
+            let errorCode = resultJson?["errorCode"] as? NSInteger
+            let message = resultJson?["message"] as? NSString
+            let entitiesArr = resultJson?["entities"] as? NSArray // json数组
             
-            if let listArray = dataDic?["entities"] as? NSArray {
-                for value in listArray {
-                    print(value)
-                }
+          
+            print("解析结果: ")
+            print("resultJson = ",resultJson as Any)
+            print("status = ",status as Any)
+            print("success = ",success as Any)
+            print("errorCode = ",errorCode as Any)
+            print("message = ",message as Any)
+            print("entitiesArr = ",entitiesArr as Any)
+            
+            for value in entitiesArr! as NSArray{
+                let valueDictionary = value as! NSDictionary
+                let url = valueDictionary["url"] as? NSString
+                let seq = valueDictionary["seq"] as? NSInteger
+                print("url = ",url as Any,"seq = ",seq as Any )
+                
             }
+            
             
         }) { (error) in
             print(error ?? "")
