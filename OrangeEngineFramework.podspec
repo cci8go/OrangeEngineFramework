@@ -40,7 +40,12 @@ TODO: Add long description of the pod here.
   s.frameworks = 'UIKit'
   
   #s.static_framework = true
+
   
+  s.subspec "view" do |ss|
+     ss.source_files  = "OrangeEngineFramework/Classes/view/*.swift"
+     #ss.framework  = "Foundation"
+  end
   
 s.subspec "common" do |ss|
    ss.source_files  = "OrangeEngineFramework/Classes/common/*.swift"
