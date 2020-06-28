@@ -45,6 +45,14 @@ class ViewController: UIViewController {
         
         self.view.addSubview(viewAdvertisingView)
         
+        
+        
+        
+//        let viewTest = SDCycleScrollView.init(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height), delegate: self, placeholderImage: UIImage.init(named: "placeholder"))
+//        viewTest?.imageURLStringsGroup = self.mUrlArray
+        
+//        self.view.addSubview(viewTest!)
+        
 //        HttpTest()
     }
 
@@ -97,6 +105,20 @@ class ViewController: UIViewController {
         
         }
     }
+    
+    
+//    public func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didSelectItemAt index: Int) {
+//          print("点击")
+//      }
+//
+//      public func cycleScrollView(_ cycleScrollView: SDCycleScrollView!, didScrollTo index: Int) {
+//
+//        print(index)
+//        if(index + 1 ==  self.mUrlArray!.count){
+//              print("最后一张了")
+//          }
+//      }
+    
 
 }
 
