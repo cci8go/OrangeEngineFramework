@@ -18,18 +18,28 @@ PODS:
     - AFNetworking (~> 4.0.1)
     - OrangeEngineFramework/common (= 1.0.4)
     - OrangeEngineFramework/net (= 1.0.4)
+    - SDCycleScrollView (~> 1.80)
   - OrangeEngineFramework/common (1.0.4):
     - AFNetworking (~> 4.0.1)
+    - SDCycleScrollView (~> 1.80)
   - OrangeEngineFramework/net (1.0.4):
     - AFNetworking (~> 4.0.1)
+    - SDCycleScrollView (~> 1.80)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.8.1):
+    - SDWebImage/Core (= 5.8.1)
+  - SDWebImage/Core (5.8.1)
 
 DEPENDENCIES:
-  - AFNetworking
+  - AFNetworking (~> 4.0.1)
   - OrangeEngineFramework (from `../`)
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
+    - SDCycleScrollView
+    - SDWebImage
 
 EXTERNAL SOURCES:
   OrangeEngineFramework:
@@ -37,8 +47,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  OrangeEngineFramework: 52ef9c242ec05a98a2b9b9b4a695b5b1095e6059
+  OrangeEngineFramework: 7e0930e1e124b3d5d13ffead21908a883203f948
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
 
-PODFILE CHECKSUM: bb5d3b1e0e8d0f8bc9a5f235c8f56aeeac2d3a29
+PODFILE CHECKSUM: 21929dec6c31a34a18554378df054142772e5619
 
 COCOAPODS: 1.9.3

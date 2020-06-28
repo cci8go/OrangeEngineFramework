@@ -54,5 +54,6 @@ end
   
 # 依赖的三方库
 s.dependency 'AFNetworking', '~>4.0.1'
+s.dependency 'SDCycleScrollView','~>1.80'
 
 end

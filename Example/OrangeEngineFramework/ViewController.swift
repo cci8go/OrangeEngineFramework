@@ -9,22 +9,55 @@
 import UIKit
 
 import OrangeEngineFramework
-
+import SDCycleScrollView
 
 
 class ViewController: UIViewController {
+    
+    
+    private var mUrlArray :[Any]?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        mUrlArray = Array.init()
+        
+        self.mUrlArray?.append("https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3055080296,174797887&fm=26&gp=0.jpg")
+        
+        self.mUrlArray?.append("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593352466681&di=502b5270c35ea4e673d321beb1215441&imgtype=0&src=http%3A%2F%2Fpic.rmb.bdstatic.com%2F0bdf589b75ec5ec0d7ada8bc30641e8d.jpeg%40wm_2%2Ct_55m%2B5a625Y%2B3L%2BS4ieS4quiIquiIquiIqg%3D%3D%2Cfc_ffffff%2Cff_U2ltSGVp%2Csz_48%2Cx_30%2Cy_30")
+        
+        self.mUrlArray?.append("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593352466676&di=7b5ca089dab8d1c9f40c2914fa31139e&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F4269f9210ba0906a94be8184bca11beecb1b19c53f6e0-bFSuXR_fw658")
+        
+        let titleGroup:[String] = ["test","tet12","te"]
+        
+        
+        
+        let viewAdvertisingView = OrangeEngineAdvertsingView()
+        viewAdvertisingView.initWithTitle(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height), imageURLStringsGroup: self.mUrlArray, titlesGroup:titleGroup,placeholderImage: UIImage.init(named: "placeholder")!,autoScrollTimeInterval:2.0)
+        viewAdvertisingView.setSDCycleScrollViewCurrentPageDotImage(named: "pageControlCurrentDot")
+        viewAdvertisingView.setSDCycleScrollViewPageDotImage(named: "pageControlDot")
+        
+//        viewAdvertisingView.initWith(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height), imageURLStringsGroup: self.mUrlArray, shouldInfiniteLoop: false,autoScrollTimeInterval:2.0)
+//        viewAdvertisingView.setSDCycleScrollViewCurrentPageDotImage(named: "pageControlCurrentDot")
+//               viewAdvertisingView.setSDCycleScrollViewPageDotImage(named: "pageControlDot")
+    
+        
+        self.view.addSubview(viewAdvertisingView)
+        
+//        HttpTest()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func HttpTest() {
         let urlString = "http://58.246.9.10:19225/rest/sgmw/advertisement"
         
         // Do any additional setup after loading the view, typically from a nib.
-
-//        OrangeEngineNetManager.shareManager.request(type: .Get, urlString: <#T##String#>, parameters: <#T##AnyObject?#>, successBlock: <#T##([String : Any]?) -> ()#>, failureBlock: <#T##(Error?) -> ()#>)(requestType: .GET, urlString: "http://58.246.9.10:19225/rest/sgmw/advertisement", parameters: ["userName": "zhangsan" as AnyObject]) { (json) in
-//            print(json as Any)
-//        }
-        
         
         let params:[String : String] = [:]
         let headers:[String:String] = [:]
@@ -58,15 +91,11 @@ class ViewController: UIViewController {
             
             
         }) { (error) in
-            print(error ?? "")
             
-        }
+            print("请求出错")
+            print(error ?? "")
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        }
     }
 
 }

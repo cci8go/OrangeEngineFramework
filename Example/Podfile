@@ -8,6 +8,5 @@ target 'OrangeEngineFramework_Example' do
   
   pod 'OrangeEngineFramework', :path => '../'
   
-  pod 'AFNetworking'
-  pod 'LLCycleScrollView' 
+  pod 'AFNetworking','~>4.0.1'
 end
