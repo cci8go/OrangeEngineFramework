@@ -14,23 +14,23 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - OrangeEngineFramework (1.0.5):
+  - OrangeEngineFramework (1.0.6):
     - AFNetworking (~> 4.0.1)
-    - OrangeEngineFramework/common (= 1.0.5)
-    - OrangeEngineFramework/net (= 1.0.5)
-    - OrangeEngineFramework/utils (= 1.0.5)
-    - OrangeEngineFramework/view (= 1.0.5)
+    - OrangeEngineFramework/common (= 1.0.6)
+    - OrangeEngineFramework/net (= 1.0.6)
+    - OrangeEngineFramework/utils (= 1.0.6)
+    - OrangeEngineFramework/view (= 1.0.6)
     - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/common (1.0.5):
-    - AFNetworking (~> 4.0.1)
-    - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/net (1.0.5):
+  - OrangeEngineFramework/common (1.0.6):
     - AFNetworking (~> 4.0.1)
     - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/utils (1.0.5):
+  - OrangeEngineFramework/net (1.0.6):
     - AFNetworking (~> 4.0.1)
     - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/view (1.0.5):
+  - OrangeEngineFramework/utils (1.0.6):
+    - AFNetworking (~> 4.0.1)
+    - SDCycleScrollView (~> 1.80)
+  - OrangeEngineFramework/view (1.0.6):
     - AFNetworking (~> 4.0.1)
     - SDCycleScrollView (~> 1.80)
   - SDCycleScrollView (1.80):
@@ -55,7 +55,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  OrangeEngineFramework: 9b45ab161f1f8557ebefe3217ac90cc64e54a8d9
+  OrangeEngineFramework: 394b496cd6112d7650913bad0976c05972c3812a
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
 

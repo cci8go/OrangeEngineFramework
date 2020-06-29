@@ -142,3 +142,7 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
 
     * Xcode Xcode 11+ is required.
     * iOS 9+
+
+### 其它工程使用
+  
+     * pod search OrangeEngineFramewok

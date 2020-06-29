@@ -8,7 +8,7 @@
 import Foundation
 
 
-public class OrangeImagePathUtil {
+public class OrangeEngineImagePathUtil {
     
     
     
