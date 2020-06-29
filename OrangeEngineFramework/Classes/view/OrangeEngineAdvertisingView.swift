@@ -45,7 +45,7 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
 //        m_SDCycleScrollView.pageDotImage = UIImage.init(named: "OrangeEngineFrameworkbundle.bundle/pageControlDot@2x.png")
 //        m_SDCycleScrollView.currentPageDotImage = UIImage.init(named: "OrangeEngineFrameworkbundle.bundle/pageControlCurrentDot@2x.png")
 //
-    
+     
 //
 //        let pageControlDotImage:String? = OrangeEngineImagePathUtil.getImageByBundlePath(filename: "pageControlDot@3x", bundleName: "OrangeEngineFrameworkbundle",podName: "OrangeEngineFramework")
 //
