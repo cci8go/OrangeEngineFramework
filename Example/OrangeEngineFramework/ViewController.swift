@@ -40,10 +40,19 @@ class ViewController: UIViewController {
 //        viewAdvertisingView.setSDCycleScrollViewPageDotImage(named: "pageControlDot")
 //
         
-        viewAdvertisingView.initWith(imageURLStringsGroup: self.mUrlArray, shouldInfiniteLoop: false,autoScrollTimeInterval:2.0)
+        viewAdvertisingView.initWith(imageURLStringsGroup: self.mUrlArray, shouldInfiniteLoop: true,autoScrollTimeInterval:2.0)
 //        viewAdvertisingView.setSDCycleScrollViewCurrentPageDotImage(named: "OrangeEngineFrameworkbundle.bundle/pageControlCurrentDot@2x.png")
 //               viewAdvertisingView.setSDCycleScrollViewPageDotImage(named: "OrangeEngineFrameworkbundle.bundle/pageControlDot@2x.png")
 //
+        viewAdvertisingView.setJumpBlockProperty { (str) in
+            print("跳过界面",str)
+        }
+        
+        let jumpBtn = viewAdvertisingView.getJumpBtn()
+//        jumpBtn.backgroundColor=UIColor.gray
+        
+        jumpBtn.setTitle("测试", for: UIControl.State.normal)
+//        jumpBtn.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
         
         self.view.addSubview(viewAdvertisingView)
         
