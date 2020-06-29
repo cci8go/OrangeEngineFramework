@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OrangeEngineFramework'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'A short description of OrangeEngineFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -56,6 +56,8 @@ s.subspec "net" do |ss|
    ss.source_files  = "OrangeEngineFramework/Classes/net/*.swift"
    #ss.framework  = "Foundation"
 end
+  
+s.resource = "OrangeEngineFramework/Assets/OrangeEngineFrameworkbundle.bundle"
   
 # 依赖的三方库
 s.dependency 'AFNetworking', '~>4.0.1'

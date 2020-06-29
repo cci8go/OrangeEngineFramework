@@ -13,11 +13,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		DF98004B97E0F668C1E4234C /* Pods_OrangeEngineFramework_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8130E6714A154CE9D6AE38F5 /* Pods_OrangeEngineFramework_Example.framework */; };
-		E27515C824A8A70B001A305E /* pageControlDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E27515C324A8A70B001A305E /* pageControlDot@2x.png */; };
-		E27515C924A8A70B001A305E /* pageControlCurrentDot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E27515C424A8A70B001A305E /* pageControlCurrentDot@3x.png */; };
-		E27515CA24A8A70B001A305E /* pageControlCurrentDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E27515C524A8A70B001A305E /* pageControlCurrentDot@2x.png */; };
-		E27515CB24A8A70B001A305E /* pageControlDot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E27515C624A8A70B001A305E /* pageControlDot@3x.png */; };
-		E27515CC24A8A70B001A305E /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E27515C724A8A70B001A305E /* placeholder@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +28,6 @@
 		70F7CA2CAB6064420144E742 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8130E6714A154CE9D6AE38F5 /* Pods_OrangeEngineFramework_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeEngineFramework_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9948C529F40236032F4D2682 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E27515C324A8A70B001A305E /* pageControlDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlDot@2x.png"; sourceTree = "<group>"; };
-		E27515C424A8A70B001A305E /* pageControlCurrentDot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlCurrentDot@3x.png"; sourceTree = "<group>"; };
-		E27515C524A8A70B001A305E /* pageControlCurrentDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlCurrentDot@2x.png"; sourceTree = "<group>"; };
-		E27515C624A8A70B001A305E /* pageControlDot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pageControlDot@3x.png"; sourceTree = "<group>"; };
-		E27515C724A8A70B001A305E /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
 		FD512E3918910720E995AB7C /* OrangeEngineFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OrangeEngineFramework.podspec; path = ../OrangeEngineFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -89,11 +79,6 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E27515C524A8A70B001A305E /* pageControlCurrentDot@2x.png */,
-				E27515C424A8A70B001A305E /* pageControlCurrentDot@3x.png */,
-				E27515C324A8A70B001A305E /* pageControlDot@2x.png */,
-				E27515C624A8A70B001A305E /* pageControlDot@3x.png */,
-				E27515C724A8A70B001A305E /* placeholder@2x.png */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -190,13 +175,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				E27515CB24A8A70B001A305E /* pageControlDot@3x.png in Resources */,
-				E27515CC24A8A70B001A305E /* placeholder@2x.png in Resources */,
-				E27515CA24A8A70B001A305E /* pageControlCurrentDot@2x.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				E27515C824A8A70B001A305E /* pageControlDot@2x.png in Resources */,
-				E27515C924A8A70B001A305E /* pageControlCurrentDot@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,14 +33,16 @@ class ViewController: UIViewController {
         
         
         
-        let viewAdvertisingView = OrangeEngineAdvertsingView()
-        viewAdvertisingView.initWithTitle(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height), imageURLStringsGroup: self.mUrlArray, titlesGroup:titleGroup,placeholderImage: UIImage.init(named: "placeholder")!,autoScrollTimeInterval:2.0)
-        viewAdvertisingView.setSDCycleScrollViewCurrentPageDotImage(named: "pageControlCurrentDot")
-        viewAdvertisingView.setSDCycleScrollViewPageDotImage(named: "pageControlDot")
-        
-//        viewAdvertisingView.initWith(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height), imageURLStringsGroup: self.mUrlArray, shouldInfiniteLoop: false,autoScrollTimeInterval:2.0)
+        let viewAdvertisingView = OrangeEngineAdvertsingView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
+
+//        viewAdvertisingView.initWithTitle(imageURLStringsGroup: self.mUrlArray, titlesGroup:titleGroup,placeholderImage: UIImage.init(named: "placeholder")!,autoScrollTimeInterval:2.0)
 //        viewAdvertisingView.setSDCycleScrollViewCurrentPageDotImage(named: "pageControlCurrentDot")
-//               viewAdvertisingView.setSDCycleScrollViewPageDotImage(named: "pageControlDot")
+//        viewAdvertisingView.setSDCycleScrollViewPageDotImage(named: "pageControlDot")
+//
+        
+        viewAdvertisingView.initWith(imageURLStringsGroup: self.mUrlArray, shouldInfiniteLoop: false,autoScrollTimeInterval:2.0)
+        viewAdvertisingView.setSDCycleScrollViewCurrentPageDotImage(named: "OrangeEngineFrameworkbundle.bundle/pageControlCurrentDot@2x.png")
+               viewAdvertisingView.setSDCycleScrollViewPageDotImage(named: "OrangeEngineFrameworkbundle.bundle/pageControlDot@2x.png")
     
         
         self.view.addSubview(viewAdvertisingView)
