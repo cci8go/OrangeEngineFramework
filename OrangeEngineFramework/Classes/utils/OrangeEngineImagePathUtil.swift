@@ -12,7 +12,7 @@ public class OrangeEngineImagePathUtil {
     
     
     
-    public static func getBundleNormalOrPod(bundleName:String?,podName:String?)->Bundle{
+    public static func getBundleNormalOrPod(bundleName:String?,podName:String?)->Bundle?{
         
         var bundleName = bundleName
         var podName = podName
@@ -44,9 +44,9 @@ public class OrangeEngineImagePathUtil {
         
         assert(associateBundleURL != nil, "取不到关联bundle")
         //生产环境直接返回空
-        if let associateBundleURL = associateBundleURL {
-            associateBundleURL != nil ? Bundle(url: associateBundleURL) : nil
-        }
+//        if let associateBundleURL = associateBundleURL {
+//            associateBundleURL != nil ? Bundle(url: associateBundleURL) : nil
+//        }
         
         return ((associateBundleURL != nil) ? Bundle(url: associateBundleURL!) : nil)!
     }
@@ -60,7 +60,7 @@ public class OrangeEngineImagePathUtil {
         let libBundle = getBundleNormalOrPod(bundleName: bundleName, podName: podName)
 
         if libBundle != nil && filename != nil {
-            let path1 = libBundle.path(forResource: filename, ofType: ".png")
+            let path1 = libBundle!.path(forResource: filename, ofType: ".png")
             return path1
         } else {
             print("print path1 is null")

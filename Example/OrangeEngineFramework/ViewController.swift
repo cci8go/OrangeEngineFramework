@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         self.mUrlArray?.append("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593352466676&di=7b5ca089dab8d1c9f40c2914fa31139e&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F4269f9210ba0906a94be8184bca11beecb1b19c53f6e0-bFSuXR_fw658")
         
-        let titleGroup:[String] = ["test","tet12","te"]
+        let _:[String] = ["test","tet12","te"]
         
         
         

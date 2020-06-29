@@ -144,7 +144,7 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
         if m_Second>1 {
            //.........
            m_Second -= 1
-            print("m_Second=",m_Second)
+            print("m_Second=",m_Second as Any)
         }else {
            stopTimer()
            print("跳转界面")

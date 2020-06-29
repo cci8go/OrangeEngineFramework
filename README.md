@@ -146,3 +146,5 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
 ### 其它工程使用
   
      * pod search OrangeEngineFramewok
+     * pod repo update
+     * pod install
