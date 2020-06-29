@@ -56,6 +56,12 @@ s.subspec "net" do |ss|
    ss.source_files  = "OrangeEngineFramework/Classes/net/*.swift"
    #ss.framework  = "Foundation"
 end
+
+s.subspec "utils" do |ss|
+   ss.source_files  = "OrangeEngineFramework/Classes/utils/*.swift"
+   #ss.framework  = "Foundation"
+end
+  
   
 s.resource = "OrangeEngineFramework/Assets/OrangeEngineFrameworkbundle.bundle"
   

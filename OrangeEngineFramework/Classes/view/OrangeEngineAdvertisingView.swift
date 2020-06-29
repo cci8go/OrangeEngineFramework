@@ -42,7 +42,19 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
         m_SDCycleScrollView.imageURLStringsGroup = imageURLStringsGroup
         m_SDCycleScrollView.delegate = self
         m_SDCycleScrollView.backgroundColor = UIColor.white
-        
+//        m_SDCycleScrollView.pageDotImage = UIImage.init(named: "OrangeEngineFrameworkbundle.bundle/pageControlDot@2x.png")
+//        m_SDCycleScrollView.currentPageDotImage = UIImage.init(named: "OrangeEngineFrameworkbundle.bundle/pageControlCurrentDot@2x.png")
+//
+    
+//
+//        let pageControlDotImage:String? = OrangeImagePathUtil.getImageByBundlePath(filename: "pageControlDot@3x", bundleName: "OrangeEngineFrameworkbundle")
+//
+//        let currentPageDotImage:String? = OrangeImagePathUtil.getImageByBundlePath(filename: "pageControlCurrentDot@3x", bundleName: "OrangeEngineFrameworkbundle")
+//
+//
+//        m_SDCycleScrollView.pageDotImage = UIImage.init(named: pageControlDotImage!)
+//        m_SDCycleScrollView.currentPageDotImage = UIImage.init(named: currentPageDotImage!)
+//
         self.m_imageURLStringsGroup = imageURLStringsGroup
         self.addSubview(m_SDCycleScrollView)
         
@@ -61,6 +73,7 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
         m_SDCycleScrollView.imageURLStringsGroup = imageURLStringsGroup
         m_SDCycleScrollView.titlesGroup = titlesGroup
         m_SDCycleScrollView.infiniteLoop = false
+
         self.m_imageURLStringsGroup = imageURLStringsGroup
         self.addSubview(m_SDCycleScrollView)
         

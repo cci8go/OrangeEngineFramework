@@ -41,11 +41,15 @@ class ViewController: UIViewController {
 //
         
         viewAdvertisingView.initWith(imageURLStringsGroup: self.mUrlArray, shouldInfiniteLoop: false,autoScrollTimeInterval:2.0)
-        viewAdvertisingView.setSDCycleScrollViewCurrentPageDotImage(named: "OrangeEngineFrameworkbundle.bundle/pageControlCurrentDot@2x.png")
-               viewAdvertisingView.setSDCycleScrollViewPageDotImage(named: "OrangeEngineFrameworkbundle.bundle/pageControlDot@2x.png")
-    
+//        viewAdvertisingView.setSDCycleScrollViewCurrentPageDotImage(named: "OrangeEngineFrameworkbundle.bundle/pageControlCurrentDot@2x.png")
+//               viewAdvertisingView.setSDCycleScrollViewPageDotImage(named: "OrangeEngineFrameworkbundle.bundle/pageControlDot@2x.png")
+//
         
         self.view.addSubview(viewAdvertisingView)
+        
+        
+        
+        
         
         
         
