@@ -66,58 +66,31 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
     }
     
     
-    //不带标题
-    public func initWith(imageURLStringsGroup: [Any]!,shouldInfiniteLoop:Bool,autoScrollTimeInterval:CGFloat){
-        
-        
-        m_SDCycleScrollView =  SDCycleScrollView(frame: self.frame, shouldInfiniteLoop: shouldInfiniteLoop, imageNamesGroup: imageURLStringsGroup)
-        
-        m_SDCycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
-        
-        m_SDCycleScrollView.currentPageDotColor = UIColor.green; // 自定义分页控件小圆标颜色
-        m_SDCycleScrollView.autoScrollTimeInterval = autoScrollTimeInterval
-        m_SDCycleScrollView.imageURLStringsGroup = imageURLStringsGroup
-        m_SDCycleScrollView.delegate = self
-        m_SDCycleScrollView.backgroundColor = UIColor.white
-        
-        //
-        //  let pageControlDotImage:String? = OrangeEngineImagePathUtil.getImageByBundlePath(filename: "pageControlDot@3x", bundleName: "OrangeEngineFrameworkbundle",podName: "OrangeEngineFramework")
-        //
-        //        let currentPageDotImage:String? = OrangeEngineImagePathUtil.getImageByBundlePath(filename: "pageControlCurrentDot@3x", bundleName: "OrangeEngineFrameworkbundle",podName: "OrangeEngineFramework")
-        
-        //
-        //        m_SDCycleScrollView.pageDotImage = UIImage.init(named: pageControlDotImage!)
-        //        m_SDCycleScrollView.currentPageDotImage = UIImage.init(named: currentPageDotImage!)
-        //
+    public func setImageGroups(imageURLStringsGroup: [Any]!){
         self.m_imageURLStringsGroup = imageURLStringsGroup
-        self.addSubview(m_SDCycleScrollView)
         
-        createJumpBtn()
-        
+        m_SDCycleScrollView.imageURLStringsGroup = imageURLStringsGroup
     }
     
-    
-    //带标题
-    public func initWithTitle(imageURLStringsGroup: [Any]!,titlesGroup:[Any]!,placeholderImage:UIImage,autoScrollTimeInterval:CGFloat) {
-        
+    public func initWith(shouldInfiniteLoop:Bool,autoScrollTimeInterval:CGFloat,placeholderImage: UIImage?){
         
         
         m_SDCycleScrollView = SDCycleScrollView(frame: self.frame, delegate: self, placeholderImage: placeholderImage)
+        
         m_SDCycleScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
+        
         m_SDCycleScrollView.currentPageDotColor = UIColor.green; // 自定义分页控件小圆标颜色
         m_SDCycleScrollView.autoScrollTimeInterval = autoScrollTimeInterval
-        m_SDCycleScrollView.imageURLStringsGroup = imageURLStringsGroup
-        m_SDCycleScrollView.titlesGroup = titlesGroup
-        m_SDCycleScrollView.infiniteLoop = false
+        m_SDCycleScrollView.delegate = self
+        m_SDCycleScrollView.backgroundColor = UIColor.white
         
-        self.m_imageURLStringsGroup = imageURLStringsGroup
         self.addSubview(m_SDCycleScrollView)
         
         createJumpBtn()
+        
     }
     
-    
-    
+
     
     //创建跳过按钮
     func createJumpBtn() {
