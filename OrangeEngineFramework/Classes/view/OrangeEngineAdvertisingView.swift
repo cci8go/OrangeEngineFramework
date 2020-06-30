@@ -154,6 +154,8 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
             //.........
             m_Second -= 1
             print("m_Second=",m_Second as Any)
+            
+            self.m_JumpBtn.setTitle("跳过\(m_Second ?? 1)", for: UIControl.State.normal)
         }else {
             stopTimer()
             print("跳转界面")

@@ -31,6 +31,7 @@ class AdvertingViewController: UIViewController {
         mAdvView.initWith(shouldInfiniteLoop: true,autoScrollTimeInterval:2.0,placeholderImage: nil)
         mAdvView.setSDCycleScrollViewPageDotImage(named: pageControlDot!)
         mAdvView.setSDCycleScrollViewCurrentPageDotImage(named: pageControlCurrentDot!)
+        mAdvView.setJumpTotalSec(totalSecond: 3)
         
         let jumpBtn = mAdvView.getJumpBtn()
         jumpBtn.setTitle("跳过", for: UIControl.State.normal)
