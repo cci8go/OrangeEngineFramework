@@ -1,4 +1,5 @@
 PODS:
+  - AAInfographics (4.0.0)
   - AFNetworking (4.0.1):
     - AFNetworking/NSURLSession (= 4.0.1)
     - AFNetworking/Reachability (= 4.0.1)
@@ -14,23 +15,23 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - OrangeEngineFramework (1.0.6):
+  - OrangeEngineFramework (1.1.1):
     - AFNetworking (~> 4.0.1)
-    - OrangeEngineFramework/common (= 1.0.6)
-    - OrangeEngineFramework/net (= 1.0.6)
-    - OrangeEngineFramework/utils (= 1.0.6)
-    - OrangeEngineFramework/view (= 1.0.6)
+    - OrangeEngineFramework/common (= 1.1.1)
+    - OrangeEngineFramework/net (= 1.1.1)
+    - OrangeEngineFramework/utils (= 1.1.1)
+    - OrangeEngineFramework/view (= 1.1.1)
     - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/common (1.0.6):
-    - AFNetworking (~> 4.0.1)
-    - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/net (1.0.6):
+  - OrangeEngineFramework/common (1.1.1):
     - AFNetworking (~> 4.0.1)
     - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/utils (1.0.6):
+  - OrangeEngineFramework/net (1.1.1):
     - AFNetworking (~> 4.0.1)
     - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/view (1.0.6):
+  - OrangeEngineFramework/utils (1.1.1):
+    - AFNetworking (~> 4.0.1)
+    - SDCycleScrollView (~> 1.80)
+  - OrangeEngineFramework/view (1.1.1):
     - AFNetworking (~> 4.0.1)
     - SDCycleScrollView (~> 1.80)
   - SDCycleScrollView (1.80):
@@ -40,6 +41,7 @@ PODS:
   - SDWebImage/Core (5.8.1)
 
 DEPENDENCIES:
+  - AAInfographics (from `https://github.com/AAChartModel/AAChartKit-Swift.git`)
   - AFNetworking (~> 4.0.1)
   - OrangeEngineFramework (from `../`)
 
@@ -50,15 +52,23 @@ SPEC REPOS:
     - SDWebImage
 
 EXTERNAL SOURCES:
+  AAInfographics:
+    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
   OrangeEngineFramework:
     :path: "../"
 
+CHECKOUT OPTIONS:
+  AAInfographics:
+    :commit: a11b0aa532fd067672e4eaa7d3d309cb381db194
+    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
+
 SPEC CHECKSUMS:
+  AAInfographics: bbeed03caece4ee3b5e557d734967394e9bcdb11
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  OrangeEngineFramework: 394b496cd6112d7650913bad0976c05972c3812a
+  OrangeEngineFramework: b14a1a678dae816303ccd5cdc32c74a59a2219d3
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
 
-PODFILE CHECKSUM: 21929dec6c31a34a18554378df054142772e5619
+PODFILE CHECKSUM: 062501fb8667f4581d61cbac5d7f9fe7dd7ed30d
 
 COCOAPODS: 1.9.3

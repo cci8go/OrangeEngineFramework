@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		DF98004B97E0F668C1E4234C /* Pods_OrangeEngineFramework_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8130E6714A154CE9D6AE38F5 /* Pods_OrangeEngineFramework_Example.framework */; };
+		E206F1FC24AB2F1100A5E430 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206F1F824AB2F1000A5E430 /* HomeViewController.swift */; };
+		E206F1FD24AB2F1100A5E430 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206F1F924AB2F1000A5E430 /* LoginViewController.swift */; };
+		E206F1FE24AB2F1100A5E430 /* AdvertisingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206F1FA24AB2F1000A5E430 /* AdvertisingViewController.swift */; };
+		E206F20A24AB2FF500A5E430 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E206F20724AB2FF500A5E430 /* Home.storyboard */; };
+		E206F20B24AB2FF500A5E430 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E206F20924AB2FF500A5E430 /* LoginView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +25,17 @@
 		607FACD01AFB9204008FA782 /* OrangeEngineFramework_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeEngineFramework_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		70F7CA2CAB6064420144E742 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8130E6714A154CE9D6AE38F5 /* Pods_OrangeEngineFramework_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrangeEngineFramework_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9948C529F40236032F4D2682 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E206F1F824AB2F1000A5E430 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E206F1F924AB2F1000A5E430 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E206F1FA24AB2F1000A5E430 /* AdvertisingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertisingViewController.swift; sourceTree = "<group>"; };
+		E206F20724AB2FF500A5E430 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E206F20924AB2FF500A5E430 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		FD512E3918910720E995AB7C /* OrangeEngineFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OrangeEngineFramework.podspec; path = ../OrangeEngineFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -65,8 +73,10 @@
 		607FACD21AFB9204008FA782 /* Example for OrangeEngineFramework */ = {
 			isa = PBXGroup;
 			children = (
+				E206F1F724AB2EE800A5E430 /* Views */,
+				E206F1F524AB2E9300A5E430 /* Models */,
+				E206F1F324AB2E6B00A5E430 /* Controllers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -109,6 +119,48 @@
 				27E1F0630A7BAE848AA77A48 /* Pods-OrangeEngineFramework_Example.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E206F1F324AB2E6B00A5E430 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E206F1FA24AB2F1000A5E430 /* AdvertisingViewController.swift */,
+				E206F1F824AB2F1000A5E430 /* HomeViewController.swift */,
+				E206F1F924AB2F1000A5E430 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E206F1F524AB2E9300A5E430 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E206F1F724AB2EE800A5E430 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E206F20624AB2FF500A5E430 /* StoryBoard */,
+				E206F20824AB2FF500A5E430 /* Xlb */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E206F20624AB2FF500A5E430 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E206F20724AB2FF500A5E430 /* Home.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		E206F20824AB2FF500A5E430 /* Xlb */ = {
+			isa = PBXGroup;
+			children = (
+				E206F20924AB2FF500A5E430 /* LoginView.xib */,
+			);
+			path = Xlb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +229,8 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				E206F20B24AB2FF500A5E430 /* LoginView.xib in Resources */,
+				E206F20A24AB2FF500A5E430 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +244,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OrangeEngineFramework_Example/Pods-OrangeEngineFramework_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AAInfographics/AAInfographics.framework",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/OrangeEngineFramework/OrangeEngineFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
@@ -197,6 +252,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAInfographics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OrangeEngineFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
@@ -236,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				E206F1FD24AB2F1100A5E430 /* LoginViewController.swift in Sources */,
+				E206F1FE24AB2F1100A5E430 /* AdvertisingViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				E206F1FC24AB2F1100A5E430 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

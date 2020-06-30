@@ -132,6 +132,7 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
         if(index + 1 ==  self.m_imageURLStringsGroup.count){
             print("最后一张了")
             
+            self.m_SDCycleScrollView.infiniteLoop = false
             startTimer()
         }
     }
