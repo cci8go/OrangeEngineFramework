@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         
         
         let jumpBtn = mAdvView.getJumpBtn()
-        jumpBtn.setTitle("测试", for: UIControl.State.normal)
+        jumpBtn.setTitle("跳过", for: UIControl.State.normal)
         self.view.addSubview(mAdvView)
     
     

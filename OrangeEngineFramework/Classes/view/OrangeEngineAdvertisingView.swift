@@ -156,6 +156,7 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
             stopTimer()
             print("跳转界面")
             
+            
             jumpBlcok(message: "autoJump")
             
         }
@@ -173,6 +174,9 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
     
     //跳过回调方法
     func jumpBlcok(message:String) {
+
+        m_SDCycleScrollView.infiniteLoop = false
+        stopTimer()
         
         if(m_Blockproperty == nil){
             return
