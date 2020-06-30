@@ -5,7 +5,7 @@
 //  Created by 王成诚 on 2020/6/28.
 //  广告轮播界面
 
-import Foundation
+
 import SDCycleScrollView
 
 
@@ -70,6 +70,8 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
         self.m_imageURLStringsGroup = imageURLStringsGroup
         
         m_SDCycleScrollView.imageURLStringsGroup = imageURLStringsGroup
+        
+        m_JumpBtn.isHidden = false
     }
     
     public func initWith(shouldInfiniteLoop:Bool,autoScrollTimeInterval:CGFloat,placeholderImage: UIImage?){
@@ -87,17 +89,16 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
         self.addSubview(m_SDCycleScrollView)
         
         createJumpBtn()
-        
     }
     
-
+    
     
     //创建跳过按钮
     func createJumpBtn() {
         // 创建一个常规的button
         print(self.bounds.width,self.bounds.height)
         m_JumpBtn = UIButton(type:.custom)
-        m_JumpBtn.frame = CGRect(x:self.bounds.width-100, y:self.bounds.height-80, width:70, height:30)
+        m_JumpBtn.frame = CGRect(x:self.bounds.width-100, y: 50, width:70, height:30)
         m_JumpBtn.setTitle("跳过", for: .normal)
         m_JumpBtn.backgroundColor = UIColor.white
         m_JumpBtn.layer.cornerRadius = 15
@@ -107,7 +108,7 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
         //button.addTarget(self, action: #selector(buttonClick), for: .touchUpInside)
         //带button参数传递
         m_JumpBtn.addTarget(self, action: #selector(buttonJumpClick(button:)), for: .touchUpInside)
-    
+        m_JumpBtn.isHidden = true
         
         self.addSubview(m_JumpBtn)
     }
@@ -175,7 +176,7 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
     
     //跳过回调方法
     func jumpBlcok(message:String) {
-
+        
         m_SDCycleScrollView.infiniteLoop = false
         stopTimer()
         
