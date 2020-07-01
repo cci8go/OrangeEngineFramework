@@ -18,11 +18,15 @@ PODS:
   - OrangeEngineFramework (1.1.1):
     - AFNetworking (~> 4.0.1)
     - OrangeEngineFramework/common (= 1.1.1)
+    - OrangeEngineFramework/extension (= 1.1.1)
     - OrangeEngineFramework/net (= 1.1.1)
     - OrangeEngineFramework/utils (= 1.1.1)
     - OrangeEngineFramework/view (= 1.1.1)
     - SDCycleScrollView (~> 1.80)
   - OrangeEngineFramework/common (1.1.1):
+    - AFNetworking (~> 4.0.1)
+    - SDCycleScrollView (~> 1.80)
+  - OrangeEngineFramework/extension (1.1.1):
     - AFNetworking (~> 4.0.1)
     - SDCycleScrollView (~> 1.80)
   - OrangeEngineFramework/net (1.1.1):
@@ -65,7 +69,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AAInfographics: bbeed03caece4ee3b5e557d734967394e9bcdb11
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  OrangeEngineFramework: b14a1a678dae816303ccd5cdc32c74a59a2219d3
+  OrangeEngineFramework: 2c0a5ef88607ac4ee4180fb89c14807fe817a924
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
 

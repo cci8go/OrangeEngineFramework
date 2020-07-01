@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import OrangeEngineFramework
 
 class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+       //3.1 xib文件与类名同名的情况
+        let demoView = DemoView.loadFromNib()
+//        demoView.backgroundColor = UIColor.red
+        view.addSubview(demoView)
+
+        //3.2 xib文件与类名不相同的情况
+//        let testV = TestView.loadFromNib("TestView0")
+//        testV.backgroundColor = UIColor.green
+//        view.addSubview(testV)
+//
+    
     }
     
     

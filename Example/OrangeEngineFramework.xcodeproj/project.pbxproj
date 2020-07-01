@@ -17,6 +17,8 @@
 		E206F1FE24AB2F1100A5E430 /* AdvertisingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206F1FA24AB2F1000A5E430 /* AdvertisingViewController.swift */; };
 		E206F20A24AB2FF500A5E430 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E206F20724AB2FF500A5E430 /* Home.storyboard */; };
 		E206F20B24AB2FF500A5E430 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E206F20924AB2FF500A5E430 /* LoginView.xib */; };
+		E206F21D24AC98A000A5E430 /* DemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E206F21C24AC98A000A5E430 /* DemoView.xib */; };
+		E206F21F24AC99D600A5E430 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206F21E24AC99D600A5E430 /* DemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		E206F1FA24AB2F1000A5E430 /* AdvertisingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertisingViewController.swift; sourceTree = "<group>"; };
 		E206F20724AB2FF500A5E430 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		E206F20924AB2FF500A5E430 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		E206F21C24AC98A000A5E430 /* DemoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoView.xib; sourceTree = "<group>"; };
+		E206F21E24AC99D600A5E430 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		FD512E3918910720E995AB7C /* OrangeEngineFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OrangeEngineFramework.podspec; path = ../OrangeEngineFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -127,6 +131,7 @@
 				E206F1FA24AB2F1000A5E430 /* AdvertisingViewController.swift */,
 				E206F1F824AB2F1000A5E430 /* HomeViewController.swift */,
 				E206F1F924AB2F1000A5E430 /* LoginViewController.swift */,
+				E206F21E24AC99D600A5E430 /* DemoView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				E206F20924AB2FF500A5E430 /* LoginView.xib */,
+				E206F21C24AC98A000A5E430 /* DemoView.xib */,
 			);
 			path = Xlb;
 			sourceTree = "<group>";
@@ -227,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				E206F21D24AC98A000A5E430 /* DemoView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				E206F20B24AB2FF500A5E430 /* LoginView.xib in Resources */,
@@ -295,6 +302,7 @@
 				E206F1FD24AB2F1100A5E430 /* LoginViewController.swift in Sources */,
 				E206F1FE24AB2F1100A5E430 /* AdvertisingViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				E206F21F24AC99D600A5E430 /* DemoView.swift in Sources */,
 				E206F1FC24AB2F1100A5E430 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

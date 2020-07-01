@@ -32,6 +32,7 @@ public class OrangeEngineAdvertsingView:UIView, SDCycleScrollViewDelegate{
     
     override  public init(frame: CGRect) {
         super.init(frame: frame)
+        OrangeEnginePathUtil.testFunc()
     }
     
     required init?(coder: NSCoder) {

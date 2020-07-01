@@ -8,8 +8,11 @@
 import Foundation
 
 
-public class OrangeEngineImagePathUtil {
+public class OrangeEnginePathUtil {
     
+    public static func testFunc(){
+        print("OrangeEnginePathUtil testFunc")
+    }
     
     
     public static func getBundleNormalOrPod(bundleName:String?,podName:String?)->Bundle?{
@@ -66,7 +69,6 @@ public class OrangeEngineImagePathUtil {
             print("print path1 is null")
         }
         return nil
-    
     }
     
     //从本地路径获取

@@ -22,8 +22,8 @@ class AdvertingViewController: UIViewController {
         let podName = "OrangeEngineFramework"
         let bundleName = "OrangeEngineFrameworkbundle"
         
-        let pageControlDot =  OrangeEngineImagePathUtil.getImageByBundlePath(filename: "pageControlDot@3x", bundleName: bundleName, podName: podName)
-        let pageControlCurrentDot =  OrangeEngineImagePathUtil.getImageByBundlePath(filename: "pageControlCurrentDot@3x", bundleName: bundleName, podName: podName)
+        let pageControlDot =  OrangeEnginePathUtil.getImageByBundlePath(filename: "pageControlDot@3x", bundleName: bundleName, podName: podName)
+        let pageControlCurrentDot =  OrangeEnginePathUtil.getImageByBundlePath(filename: "pageControlCurrentDot@3x", bundleName: bundleName, podName: podName)
         
     
         mAdvView = OrangeEngineAdvertsingView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
@@ -43,6 +43,9 @@ class AdvertingViewController: UIViewController {
             
             let vc = LoginViewController()
             self.navigationController?.pushViewController(vc , animated: true)
+            
+            
+            
             
         }
 
