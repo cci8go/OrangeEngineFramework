@@ -28,5 +28,9 @@ extension OrangeEngineUiViewNibLoadable where Self : UIView {
     }
     
     
-    
+    public static func loadFromNib(bundle :Bundle!, nibname: String? = nil) -> Self {//Self (大写) 当前类对象
+           //self(小写) 当前对象
+           let loadName = nibname == nil ? "\(self)" : nibname!
+           return bundle.loadNibNamed(loadName, owner: nil, options: nil)?.first as! Self
+       }
 }

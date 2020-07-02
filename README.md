@@ -148,3 +148,12 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
      * pod search OrangeEngineFramewok
      * pod repo update
      * pod install
+
+
+
+### xib 编译成nib
+
+
+   *  cd /Users/wangchengcheng/Documents/SelfZone/iOS/OrangeEngineFramework/OrangeEngineFramework/Assets/OrangeEngineFrameworkbundle.bundle/xib
+   *  ibtool --errors --warnings --output-format human-readable-text --compile /Users/wangchengcheng/Documents/SelfZone/iOS/OrangeEngineFramework/OrangeEngineFramework/Assets/OrangeEngineFrameworkbundle.bundle/nib/LoginView.nib /Users/wangchengcheng/Documents/SelfZone/iOS/OrangeEngineFramework/OrangeEngineFramework/Assets/OrangeEngineFrameworkbundle.bundle/xib/LoginView.xib
+

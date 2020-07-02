@@ -8,12 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
-            <connections>
-                <outlet property="accountTextField" destination="DGu-PV-hYL" id="5c1-oM-8dw"/>
-                <outlet property="passwrodTextField" destination="Qzm-DE-tuY" id="ev8-O3-zM9"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrangeEngineLoginView" customModule="OrangeEngineFramework" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -65,17 +60,15 @@
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="登陆"/>
                     <connections>
-                        <action selector="btnLogin:" destination="-1" eventType="touchUpInside" id="NKD-Mm-5tG"/>
-                        <action selector="btnLogin:" destination="iN0-l3-epB" eventType="touchUpInside" id="jlA-rW-7gq"/>
+                        <action selector="btnLogin:" destination="iN0-l3-epB" eventType="touchUpInside" id="dBE-13-BWZ"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="btnLogin" destination="2Vv-fM-kje" id="0VV-xm-oST"/>
-                <outletCollection property="accountTextField" destination="DGu-PV-hYL" collectionClass="NSMutableArray" id="u2j-j7-nTz"/>
-                <outletCollection property="passwrodTextField" destination="Qzm-DE-tuY" collectionClass="NSMutableArray" id="Ian-J9-Mcc"/>
+                <outletCollection property="accountTextField" destination="DGu-PV-hYL" collectionClass="NSMutableArray" id="sI7-M1-AAI"/>
+                <outletCollection property="passwrodTextField" destination="Qzm-DE-tuY" collectionClass="NSMutableArray" id="Lhk-4r-TKb"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
         </view>

@@ -15,14 +15,16 @@ public class OrangeEngineLoginView: UIView,OrangeEngineUiViewNibLoadable {
     
      override  public init(frame: CGRect) {
           super.init(frame: frame)
+        
       }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+//        fatalError("init(coder:) has not been implemented")
     }
     
     
     @IBAction func btnLogin(_ sender: Any) {
-           
+           print("btnLogin")
     }
 }

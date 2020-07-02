@@ -25,6 +25,8 @@ class AdvertingViewController: UIViewController {
         let pageControlDot =  OrangeEnginePathUtil.getImageByBundlePath(filename: "pageControlDot@3x", bundleName: bundleName, podName: podName)
         let pageControlCurrentDot =  OrangeEnginePathUtil.getImageByBundlePath(filename: "pageControlCurrentDot@3x", bundleName: bundleName, podName: podName)
         
+        let customerPath = OrangeEnginePathUtil.getImageByBundlePath(filename: "LoginRegister/customer@2x", bundleName: bundleName, podName: podName)
+               
     
         mAdvView = OrangeEngineAdvertsingView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
         
