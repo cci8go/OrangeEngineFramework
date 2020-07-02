@@ -5,6 +5,7 @@
 //  Created by 王成诚 on 2020/7/1.
 //
 
+import Foundation
 import UIKit
 
 public class OrangeEngineLoginView: UIView,OrangeEngineUiViewNibLoadable {

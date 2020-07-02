@@ -6,6 +6,7 @@
 //  广告轮播界面
 
 
+import Foundation
 import SDCycleScrollView
 
 
