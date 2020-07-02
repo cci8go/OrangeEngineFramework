@@ -43,8 +43,10 @@ TODO: Add long description of the pod here.
 
   
   s.subspec "view" do |ss|
-     ss.source_files  = "OrangeEngineFramework/Classes/view/*.*"
+     ss.source_files  = "OrangeEngineFramework/Classes/view/*"
      #ss.framework  = "Foundation"
+     ss.dependency 'OrangeEngineFramework/utils'
+     ss.dependency 'OrangeEngineFramework/extension'
   end
   
 s.subspec "common" do |ss|
