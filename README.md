@@ -81,7 +81,7 @@ OrangeEngineFramework is available under the MIT license. See the LICENSE file f
 
        如果命令后面加条尾巴 --library 则表示打包成 .a 文件，如果不带，则会打包成 .framework 文件。 --force会覆盖之前已存在的文件。完成了就可以在目录下看到***-0.0.1，里面就是你想要的Framework了。
     * 上传到cocoapods
-      pod trunk push OrangeEngineFramework.podspec --allow-warnings 
+      pod trunk push OrangeEngineFramework.podspec --allow-warnings  
 
 
       https://cocoapods.org/pods/OrangeEngineFramework
