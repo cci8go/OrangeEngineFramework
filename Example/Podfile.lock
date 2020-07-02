@@ -15,27 +15,27 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - OrangeEngineFramework (1.1.2):
+  - OrangeEngineFramework (1.1.4):
     - AFNetworking (~> 4.0.1)
-    - OrangeEngineFramework/common (= 1.1.2)
-    - OrangeEngineFramework/extension (= 1.1.2)
-    - OrangeEngineFramework/net (= 1.1.2)
-    - OrangeEngineFramework/utils (= 1.1.2)
-    - OrangeEngineFramework/view (= 1.1.2)
+    - OrangeEngineFramework/common (= 1.1.4)
+    - OrangeEngineFramework/extension (= 1.1.4)
+    - OrangeEngineFramework/net (= 1.1.4)
+    - OrangeEngineFramework/utils (= 1.1.4)
+    - OrangeEngineFramework/view (= 1.1.4)
     - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/common (1.1.2):
-    - AFNetworking (~> 4.0.1)
-    - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/extension (1.1.2):
+  - OrangeEngineFramework/common (1.1.4):
     - AFNetworking (~> 4.0.1)
     - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/net (1.1.2):
+  - OrangeEngineFramework/extension (1.1.4):
     - AFNetworking (~> 4.0.1)
     - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/utils (1.1.2):
+  - OrangeEngineFramework/net (1.1.4):
     - AFNetworking (~> 4.0.1)
     - SDCycleScrollView (~> 1.80)
-  - OrangeEngineFramework/view (1.1.2):
+  - OrangeEngineFramework/utils (1.1.4):
+    - AFNetworking (~> 4.0.1)
+    - SDCycleScrollView (~> 1.80)
+  - OrangeEngineFramework/view (1.1.4):
     - AFNetworking (~> 4.0.1)
     - OrangeEngineFramework/extension
     - OrangeEngineFramework/utils
@@ -71,7 +71,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AAInfographics: bbeed03caece4ee3b5e557d734967394e9bcdb11
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  OrangeEngineFramework: 4429a02b7dccfb885be37a9553910e414090ae21
+  OrangeEngineFramework: 93382093fd5431d3b7ec8be4bef0534bfda0928b
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
 

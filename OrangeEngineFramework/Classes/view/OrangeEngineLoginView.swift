@@ -8,24 +8,47 @@
 import Foundation
 import UIKit
 
+
+public typealias loginFucBlock = (_ account:String,_ password:String) ->()
+
 public class OrangeEngineLoginView: UIView,OrangeEngineUiViewNibLoadable {
     
-    @IBOutlet var accountTextField: [UITextField]!
     
-    @IBOutlet var passwrodTextField: [UITextField]!
+    private var m_LoginBlock:loginFucBlock!
     
-     override  public init(frame: CGRect) {
-          super.init(frame: frame)
+    @IBOutlet var m_AccountTextField: UITextField!
+    
+    @IBOutlet var m_PasswrodTextField: UITextField!
+    
+    
+    //设置回调事件
+    public func setLoginFunBlockProperty(block: @escaping loginFucBlock){
+        m_LoginBlock = block
+    }
+    
+    override  public init(frame: CGRect) {
+        super.init(frame: frame)
         
-      }
+    }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-//        fatalError("init(coder:) has not been implemented")
+        //        fatalError("init(coder:) has not been implemented")
     }
     
     
     @IBAction func btnLogin(_ sender: Any) {
-           print("btnLogin")
+        print("btnLogin")
+        
+        let account:String = m_AccountTextField.text!
+        let password:String = m_PasswrodTextField.text!
+        
+        if m_LoginBlock != nil {
+            m_LoginBlock(account,password)
+        }
     }
+    
+    
+    
+    
 }

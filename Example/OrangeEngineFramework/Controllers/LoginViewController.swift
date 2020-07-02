@@ -22,12 +22,17 @@ class LoginViewController: UIViewController {
         let bundle = OrangeEnginePathUtil.getBundleNormalOrPod(bundleName: bundleName, podName: podName)
         
       
-        let view =  OrangeEngineLoginView.loadFromNib(bundle: bundle, nibname: "/nib/LoginView")
-        self.view.addSubview(view)
+        let orangeEngineLoginView =  OrangeEngineLoginView.loadFromNib(bundle: bundle, nibname: "/nib/LoginView")
+       
         
         
+        orangeEngineLoginView.setLoginFunBlockProperty { (account, password) in
+            print("account=",account,"password=",password)
+        }
         
+         self.view.addSubview(orangeEngineLoginView)
     }
+    
     
     
     @IBAction func btnLoginClick(_ sender: Any) {

@@ -67,8 +67,8 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outletCollection property="accountTextField" destination="DGu-PV-hYL" collectionClass="NSMutableArray" id="sI7-M1-AAI"/>
-                <outletCollection property="passwrodTextField" destination="Qzm-DE-tuY" collectionClass="NSMutableArray" id="Lhk-4r-TKb"/>
+                <outlet property="m_AccountTextField" destination="DGu-PV-hYL" id="ZjV-kf-i8C"/>
+                <outlet property="m_PasswrodTextField" destination="Qzm-DE-tuY" id="rWL-9F-oLo"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
         </view>
