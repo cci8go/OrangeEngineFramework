@@ -11,7 +11,7 @@
         <!--HomeView Controller-->
         <scene sceneID="WTp-Ya-yQF">
             <objects>
-                <viewController storyboardIdentifier="HomeView" id="cyr-F1-Fnd" userLabel="HomeView Controller" customClass="HomeViewController" customModule="SGMW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeView" id="cyr-F1-Fnd" userLabel="HomeView Controller" customClass="HomeViewController" customModule="OrangeEngineFramework_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZB-HM-FUt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4U-7R-ltq">
                                 <rect key="frame" x="53" y="174" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="btnReturnClick:" destination="cyr-F1-Fnd" eventType="touchUpInside" id="NDc-Ns-w4v"/>
