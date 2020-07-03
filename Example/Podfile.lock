@@ -45,17 +45,19 @@ PODS:
   - SDWebImage (5.8.1):
     - SDWebImage/Core (= 5.8.1)
   - SDWebImage/Core (5.8.1)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - AAInfographics (from `https://github.com/AAChartModel/AAChartKit-Swift.git`)
-  - AFNetworking (~> 4.0.1)
   - OrangeEngineFramework (from `../`)
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
     - SDCycleScrollView
     - SDWebImage
+    - Toast-Swift
 
 EXTERNAL SOURCES:
   AAInfographics:
@@ -74,7 +76,8 @@ SPEC CHECKSUMS:
   OrangeEngineFramework: 93382093fd5431d3b7ec8be4bef0534bfda0928b
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 062501fb8667f4581d61cbac5d7f9fe7dd7ed30d
+PODFILE CHECKSUM: 04160aecc885649c39732a88527be03c9974b2cb
 
 COCOAPODS: 1.9.3

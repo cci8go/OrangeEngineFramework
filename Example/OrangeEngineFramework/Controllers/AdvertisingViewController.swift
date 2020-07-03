@@ -70,8 +70,7 @@ class AdvertingViewController: UIViewController {
     func advertsingProgress() {
         
         
-        let urlString = "http://58.246.9.10:19225/rest/sgmw/advertisement"
-        
+        let urlString = NetConstants.NET_ADVERTISING
         
         let params:[String : String] = [:]
         let headers:[String:String] = [:]

@@ -8,6 +8,7 @@ target 'OrangeEngineFramework_Example' do
   
   pod 'OrangeEngineFramework', :path => '../'
   
-  pod 'AFNetworking','~>4.0.1'
+#  pod 'AFNetworking','~>4.0.1'
   pod 'AAInfographics', :git => 'https://github.com/AAChartModel/AAChartKit-Swift.git'
+  pod 'Toast-Swift', '~> 5.0.1'
 end

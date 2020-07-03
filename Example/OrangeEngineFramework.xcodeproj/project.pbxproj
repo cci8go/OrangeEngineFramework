@@ -19,6 +19,7 @@
 		E206F20B24AB2FF500A5E430 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E206F20924AB2FF500A5E430 /* LoginView.xib */; };
 		E206F21D24AC98A000A5E430 /* DemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E206F21C24AC98A000A5E430 /* DemoView.xib */; };
 		E206F21F24AC99D600A5E430 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206F21E24AC99D600A5E430 /* DemoView.swift */; };
+		E206F23224AED9A400A5E430 /* NetConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E206F23124AED9A400A5E430 /* NetConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E206F20924AB2FF500A5E430 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		E206F21C24AC98A000A5E430 /* DemoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoView.xib; sourceTree = "<group>"; };
 		E206F21E24AC99D600A5E430 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		E206F23124AED9A400A5E430 /* NetConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetConstants.swift; sourceTree = "<group>"; };
 		FD512E3918910720E995AB7C /* OrangeEngineFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OrangeEngineFramework.podspec; path = ../OrangeEngineFramework.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 		607FACD21AFB9204008FA782 /* Example for OrangeEngineFramework */ = {
 			isa = PBXGroup;
 			children = (
+				E206F23024AED95C00A5E430 /* Common */,
 				E206F1F724AB2EE800A5E430 /* Views */,
 				E206F1F524AB2E9300A5E430 /* Models */,
 				E206F1F324AB2E6B00A5E430 /* Controllers */,
@@ -169,6 +172,14 @@
 			path = Xlb;
 			sourceTree = "<group>";
 		};
+		E206F23024AED95C00A5E430 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E206F23124AED9A400A5E430 /* NetConstants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +267,7 @@
 				"${BUILT_PRODUCTS_DIR}/OrangeEngineFramework/OrangeEngineFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -264,6 +276,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OrangeEngineFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -300,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E206F1FD24AB2F1100A5E430 /* LoginViewController.swift in Sources */,
+				E206F23224AED9A400A5E430 /* NetConstants.swift in Sources */,
 				E206F1FE24AB2F1100A5E430 /* AdvertisingViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				E206F21F24AC99D600A5E430 /* DemoView.swift in Sources */,
